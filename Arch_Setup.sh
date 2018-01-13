@@ -18,6 +18,15 @@ sudo pacman -S ${pacman_list[@]} --noconfirm
 # Change Shell to ZSH
 chsh -s /usr/bin/zsh
 
+# Install atom packages
+atom_list=(
+emmet
+file-icons
+platformio-ide-terminal
+)
+
+apm install atom_list ~/.atom/packages
+
 #Set Yaourt to not prompt
 echo NOCONFIRM=1 > ~/.yaourtrc
 echo BUILD_NOCONFIRM=1 >>  ~/.yaourtrc
