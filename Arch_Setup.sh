@@ -37,6 +37,7 @@ yaourt_list=(
 google-chrome
 pycharm-community-edition
 #boostnote
+#dropbox
 #wps-office
 oh-my-zsh-git
 )
