@@ -2,7 +2,7 @@
 sudo pacman -Syu --noconfirm
 
 # Mac Wirless Drivers (Optional)
-#sudo modprobe b43
+# sudo modprobe b43
 
 # Pacman Software to Install
 pacman_list=(
@@ -25,9 +25,9 @@ file-icons
 platformio-ide-terminal
 )
 
-apm install atom_list ~/.atom/packages
+apm install ${atom_list[@]} ~/.atom/packages
 
-#Set Yaourt to not prompt
+# Set Yaourt to not prompt
 echo NOCONFIRM=1 > ~/.yaourtrc
 echo BUILD_NOCONFIRM=1 >>  ~/.yaourtrc
 echo EDITFILES=0 >>  ~/.yaourtrc
@@ -49,7 +49,13 @@ do
 yaourt -S ${pkg}
 done
 
-cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
+git clone https://github.com/smblasik/Scripts ~/Scripts
+#cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
+ln ~/Scripts/.zshrc ~/.zshrc
+
+cp ~/Scripts/X-Wing.jpg ~/Pictures/X-Wing.jpg
+
+# Remove uneeded software
 sudo pacman -Rns hplip
 
 sudo reboot
