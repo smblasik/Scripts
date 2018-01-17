@@ -40,6 +40,7 @@ pycharm-community-edition
 #dropbox
 #wps-office
 oh-my-zsh-git
+flat-remix-git
 )
 
 # Install AUR packages
