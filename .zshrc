@@ -90,7 +90,9 @@ plugins=(
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="atom ~/.zshrc"
+alias remove="sudo pacman -Rns"
+alias update="sudo pacman -Syu --noconfirm"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh

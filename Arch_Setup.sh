@@ -12,6 +12,7 @@ zsh
 python-pip
 gnome-break-timer
 numix-icon-theme-circle
+steam
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
