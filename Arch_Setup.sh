@@ -12,7 +12,6 @@ zsh
 python-pip
 gnome-break-timer
 numix-icon-theme-circle
-steam
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
@@ -55,6 +54,11 @@ git clone https://github.com/smblasik/Scripts ~/Scripts
 ln ~/Scripts/.zshrc ~/.zshrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/X-Wing.jpg
+
+# Gaming
+#sudo pacman -S steam
+#yaourt -S discord
+#gpg --recv-keys 0FC3042E345AD05D
 
 # Remove uneeded software
 sudo pacman -Rns hplip
