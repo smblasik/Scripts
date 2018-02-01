@@ -41,6 +41,7 @@ pycharm-community-edition
 #wps-office
 oh-my-zsh-git
 flat-remix-git
+lightdm-webkit2-theme-material2
 )
 
 # Install AUR packages
@@ -49,14 +50,17 @@ do
 yaourt -S ${pkg}
 done
 
+# Set default lightdm-webkit2-greeter theme to material2
+sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = material2 #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
+
 git clone https://github.com/smblasik/Scripts ~/Scripts
 #cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
 ln ~/Scripts/.zshrc ~/.zshrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/X-Wing.jpg
+cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
 
-# Gaming
-#sudo pacman -S steam
+# Dicsord (Optional)
 #yaourt -S discord
 #gpg --recv-keys 0FC3042E345AD05D
 
