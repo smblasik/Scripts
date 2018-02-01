@@ -35,6 +35,7 @@ echo EDITFILES=0 >>  ~/.yaourtrc
 # AUR Software to Install
 yaourt_list=(
 google-chrome
+chrome-gnome-shell
 pycharm-community-edition
 #boostnote
 #dropbox
