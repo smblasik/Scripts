@@ -17,12 +17,12 @@ chsh -s /usr/bin/zsh
 
 # Data Science
 pip_list=(
-jupyter-notebook
+jupyter
 pandas
 matplotlib
 )
 
-pip install ${pip_list}
+sudo pip install ${pip_list[@]}
 
 # Install atom packages
 atom_list=(
