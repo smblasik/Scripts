@@ -1,22 +1,28 @@
 #!bin/sh
 sudo pacman -Syu --noconfirm
 
-# Mac Wirless Drivers (Optional)
-# sudo modprobe b43
-
 # Pacman Software to Install
 pacman_list=(
 atom
 terminator
 zsh
 python-pip
-gnome-break-timer
+#gnome-break-timer
 numix-icon-theme-circle
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
 # Change Shell to ZSH
 chsh -s /usr/bin/zsh
+
+# Data Science
+pip_list=(
+jupyter-notebook
+pandas
+matplotlib
+)
+
+pip install ${pip_list}
 
 # Install atom packages
 atom_list=(
