@@ -95,6 +95,7 @@ alias remove="sudo pacman -Rns"
 alias update="sudo pacman -Syu --noconfirm"
 alias install="sudo pacman -S"
 alias rup="sudo pacman -Rs $(pacman -Qqdt)"
+alias jn= jupyter-notebook
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
