@@ -7,6 +7,7 @@ atom
 terminator
 zsh
 python-pip
+openssh
 #gnome-break-timer
 #numix-icon-theme-circle
 )
@@ -14,6 +15,9 @@ python-pip
 sudo pacman -S ${pacman_list[@]} --noconfirm
 # Change Shell to ZSH
 chsh -s /usr/bin/zsh
+# Enable SSH
+sudo systemctl enable sshd.service
+sudo systemctl start sshd.service
 
 # Data Science
 pip_list=(
