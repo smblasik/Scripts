@@ -65,7 +65,7 @@ git clone https://github.com/smblasik/Scripts ~/Scripts
 #cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
 ln ~/Scripts/.zshrc ~/.zshrc
 
-cp ~/Scripts/X-Wing.jpg ~/Pictures/X-Wing.jpg
+cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
 cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
 
 # Dicsord (Optional)
