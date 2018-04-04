@@ -13,11 +13,12 @@ openssh
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
+
 # Change Shell to ZSH
 chsh -s /usr/bin/zsh
 # Enable SSH
-sudo systemctl enable sshd.service
-sudo systemctl start sshd.service
+#sudo systemctl enable sshd.service
+#sudo systemctl start sshd.service
 
 # Data Science
 pip_list=(
@@ -48,7 +49,7 @@ google-chrome
 #dropbox
 #wps-office
 oh-my-zsh-git
-flat-remix-git
+#flat-remix-git
 #lightdm-webkit2-theme-material2
 )
 
