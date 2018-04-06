@@ -18,14 +18,17 @@ sudo pacman -S ${pacman_list[@]} --noconfirm
 
 # Change Shell to ZSH
 chsh -s /usr/bin/zsh
+
 # Enable SSH
-#sudo systemctl enable sshd.service
-#sudo systemctl start sshd.service
+sudo systemctl enable sshd.service
+sudo systemctl start sshd.service
 
 # Data Science
 pip_list=(
   jupyter
   pandas
+  matplotlib
+  scikit-learn
   matplotlib
 )
 
@@ -73,10 +76,6 @@ cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
 
 # Install VIM config
 curl 'http://vim-bootstrap.com/generate.vim' --data 'langs=python&editor=vim' > ~/.vimrc
-
-# Dicsord (Optional)
-#yaourt -S discord
-#gpg --recv-keys 0FC3042E345AD05D
 
 # Remove uneeded software
 #sudo pacman -Rns hplip
