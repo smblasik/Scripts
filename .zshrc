@@ -49,7 +49,7 @@ ZSH_THEME="kardan"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+# HIST_STAMPS="mm/dd/yyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -90,12 +90,13 @@ plugins=(
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="atom ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias remove="sudo pacman -Rns"
 alias update="sudo pacman -Syu --noconfirm"
 alias install="sudo pacman -S"
 alias rup="sudo pacman -Rs $(pacman -Qqdt)"
 alias jn="jupyter-notebook"
+alias v="vim .i3/config"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
