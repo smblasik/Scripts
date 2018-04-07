@@ -70,12 +70,14 @@ done
 #Set Up Scripts folder
 git clone https://github.com/smblasik/Scripts ~/Scripts
 ln ~/Scripts/.zshrc ~/.zshrc
+ln ~/Scripts/.i3config ~/i3/config
+ln ~/Scripts/.virmc ~/.vimrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
 cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
 
 # Install VIM config
-curl 'http://vim-bootstrap.com/generate.vim' --data 'langs=python&editor=vim' > ~/.vimrc
+#curl 'http://vim-bootstrap.com/generate.vim' --data 'langs=python&editor=vim' > ~/.vimrc
 
 # Remove uneeded software
 #sudo pacman -Rns hplip
