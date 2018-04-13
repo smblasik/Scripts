@@ -70,7 +70,7 @@ done
 #Set Up Scripts folder
 git clone https://github.com/smblasik/Scripts ~/Scripts
 ln ~/Scripts/.zshrc ~/.zshrc
-ln ~/Scripts/.i3config ~/i3/config
+#ln ~/Scripts/.i3config ~/i3/config
 ln ~/Scripts/.virmc ~/.vimrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
