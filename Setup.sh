@@ -10,6 +10,9 @@ pacman_list=(
   zsh
   python-pip
   openssh
+  git
+  yaourt
+  vim
   #gnome-break-timer
   #numix-icon-theme-circle
 )
@@ -51,6 +54,7 @@ echo EDITFILES=0 >>  ~/.yaourtrc
 # AUR Software to Install
 yaourt_list=(
   google-chrome
+  i3lock-blur
   #dropbox
   #wps-office
   oh-my-zsh-git
