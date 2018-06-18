@@ -68,9 +68,6 @@ do
 yaourt -S ${pkg}
 done
 
-# Set default lightdm-webkit2-greeter theme to material2
-#sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = material2 #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
-
 #Set Up Scripts folder
 git clone https://github.com/smblasik/Scripts ~/Scripts
 ln ~/Scripts/.zshrc ~/.zshrc
