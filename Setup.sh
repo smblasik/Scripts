@@ -55,6 +55,7 @@ echo EDITFILES=0 >>  ~/.yaourtrc
 yaourt_list=(
   google-chrome
   i3lock-blur
+  corebird
   #dropbox
   #wps-office
   oh-my-zsh-git
