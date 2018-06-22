@@ -27,13 +27,13 @@ sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
 
 # Data Science
-pip_list=(
-  jupyter
-  pandas
-  matplotlib
-  scikit-learn
-  matplotlib
-)
+#pip_list=(
+#  jupyter
+#  pandas
+#  matplotlib
+#  scikit-learn
+#  matplotlib
+#)
 
 sudo pip install ${pip_list[@]}
 
@@ -54,7 +54,7 @@ echo EDITFILES=0 >>  ~/.yaourtrc
 # AUR Software to Install
 yaourt_list=(
   google-chrome
-  i3lock-blur
+  #i3lock-blur
   corebird
   #dropbox
   #wps-office
@@ -77,11 +77,5 @@ ln ~/Scripts/.virmc ~/.vimrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
 cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
-
-# Install VIM config
-#curl 'http://vim-bootstrap.com/generate.vim' --data 'langs=python&editor=vim' > ~/.vimrc
-
-# Remove uneeded software
-#sudo pacman -Rns hplip
 
 sudo reboot
