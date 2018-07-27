@@ -14,7 +14,7 @@ pacman_list=(
   yaourt
   vim
   #gnome-break-timer
-  #numix-icon-theme-circle
+  numix-icon-theme-circle
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
