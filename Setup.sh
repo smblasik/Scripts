@@ -13,14 +13,14 @@ pacman_list=(
   git
   yaourt
   vim
-  #gnome-break-timer
-  #numix-icon-theme-circle
+  corebird
+  numix-icon-theme-circle
 )
 # Pacman Execution
 sudo pacman -S ${pacman_list[@]} --noconfirm
 
 # Change Shell to ZSH
-chsh -s /usr/bin/zsh
+sudo chsh -s `which zsh` $USER
 
 # Enable SSH
 sudo systemctl enable sshd.service
@@ -29,13 +29,14 @@ sudo systemctl start sshd.service
 # Data Science
 #pip_list=(
 #  jupyter
+#  random
 #  pandas
 #  matplotlib
 #  scikit-learn
 #  matplotlib
 #)
 
-sudo pip install ${pip_list[@]}
+#sudo pip install ${pip_list[@]}
 
 # Install atom packages
 atom_list=(
@@ -47,20 +48,17 @@ atom_list=(
 apm install ${atom_list[@]} ~/.atom/packages
 
 # Set Yaourt to not prompt
-echo NOCONFIRM=1 > ~/.yaourtrc
-echo BUILD_NOCONFIRM=1 >>  ~/.yaourtrc
-echo EDITFILES=0 >>  ~/.yaourtrc
+# echo NOCONFIRM=1 > ~/.yaourtrc
+# echo BUILD_NOCONFIRM=1 >>  ~/.yaourtrc
+# echo EDITFILES=0 >>  ~/.yaourtrc
 
 # AUR Software to Install
 yaourt_list=(
   google-chrome
-  #i3lock-blur
-  corebird
-  #dropbox
-  #wps-office
+  osx-arc-shadow
   oh-my-zsh-git
-  #flat-remix-git
-  #lightdm-webkit2-theme-material2
+  flat-remix-git
+  flat-remix-gtk-git
 )
 
 # Install AUR packages
@@ -72,10 +70,11 @@ done
 #Set Up Scripts folder
 git clone https://github.com/smblasik/Scripts ~/Scripts
 ln ~/Scripts/.zshrc ~/.zshrc
-#ln ~/Scripts/.i3config ~/i3/config
 ln ~/Scripts/.virmc ~/.vimrc
 
 cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
 cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
+
+echo TemperatureFormat=true >> ~/.config/deepin/dcc-weather-plugin.conf
 
 sudo reboot
