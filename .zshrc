@@ -91,6 +91,7 @@ plugins=(
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias remove="sudo pacman -Rns"
 alias update="sudo pacman -Syu --noconfirm"
 alias install="sudo pacman -S"

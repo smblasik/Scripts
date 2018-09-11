@@ -13,7 +13,11 @@ pacman_list=(
   git
   yaourt
   vim
+<<<<<<< HEAD
   corebird
+=======
+  #gnome-break-timer
+>>>>>>> b4bc699a9cc8e32b09a1aed41cb428a1bfb3ff3a
   numix-icon-theme-circle
 )
 # Pacman Execution
