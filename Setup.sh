@@ -13,11 +13,7 @@ pacman_list=(
   git
   yaourt
   vim
-<<<<<<< HEAD
   corebird
-=======
-  #gnome-break-timer
->>>>>>> b4bc699a9cc8e32b09a1aed41cb428a1bfb3ff3a
   numix-icon-theme-circle
 )
 # Pacman Execution
@@ -79,6 +75,6 @@ ln ~/Scripts/.virmc ~/.vimrc
 cp ~/Scripts/X-Wing.jpg ~/Pictures/Wallpaper/X-Wing.jpg
 cp ~/Scripts/BlackHat.png ~/Pictures/BlackHat.png
 
-echo TemperatureFormat=true >> ~/.config/deepin/dcc-weather-plugin.conf
+#echo TemperatureFormat=true >> ~/.config/deepin/dcc-weather-plugin.conf
 
 sudo reboot
