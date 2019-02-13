@@ -5,12 +5,9 @@ sudo pacman -Syu --noconfirm
 
 # Pacman Software to Install
 pacman_list=(
-  atom
   terminator
   zsh
   python-pip
-  openssh
-  git
   yaourt
   vim
   corebird
